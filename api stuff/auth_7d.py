@@ -1,8 +1,13 @@
+'''
+This file contains functions that assist with authentication of the API key for 7Digital.
+Returns signed requests, tokens from responses, and authorizes request tokens.
+'''
+
 import httplib
 import re
 import sys
 
-import api_settings
+import API_info
 import oauth2 as oauth
 
 SERVER = 'api.7digital.com'

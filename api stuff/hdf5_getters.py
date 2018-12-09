@@ -2,14 +2,12 @@
 Thierry Bertin-Mahieux (2010) Columbia University
 tb2332@columbia.edu
 
-
 This code contains a set of getters functions to access the fields
 from an HDF5 song file (regular file with one song or
 aggregate / summary file with many songs)
 
 This is part of the Million Song Dataset project from
 LabROSA (Columbia University) and The Echo Nest.
-
 
 Copyright 2010, Thierry Bertin-Mahieux
 
@@ -26,7 +24,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-
 
 import tables
 

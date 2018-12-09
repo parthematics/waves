@@ -1,3 +1,9 @@
+'''
+This file contains a variety of helper functions found online and credited completely
+to Jason Rubenstein. These functions provide a lightweight Python implementation to 
+access and pull from the 7Digital web interface.
+'''
+
 import httplib2
 import os
 import urllib
@@ -6,31 +12,14 @@ import urlparse
 import xmltodict
 import collections
 
-import oauth7digital as oa7D
-import api_settings
-
-__name__ = 'py7D'
-__doc__ = 'A lightweight python interface to 7Digital web service'
-__author__ = 'Jason Rubenstein'
-__version__ = '0.2'
-__maintainer__ = 'Jason Rubenstein'
-__email__ = 'jasondrubenstein@gmail.com'
-__status__ = 'Beta'
+import auth_7d as oa7D
+import API_info
 
 SERVER = 'api.7digital.com'
 API_VERSION = '1.2'
 API_URL = 'https://%s/%s' % (SERVER, API_VERSION)
 CLIP_URL = 'http://previews.7digital.com/clip/%s?' % (
                                                 "%s")
-
-class APIServiceException(Exception):
-    pass
-
-
-class APIClientException(Exception):
-    pass
-
-
 def _assemble_url(host, method, function, oauth, **kwargs):
     data = []
 
