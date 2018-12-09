@@ -42,7 +42,7 @@ MFCCs are calculated as follows:
 4. Take the discrete cosine transform of the mel log powers, treating it as a signal
 5. The MFCCs are the amplitudes of the resulting spectrum.
  
-## The Graph
+## Deep Learning
  
  After reading about the results that Tao and Sander (papers that we referred to) achieved, we decided to implement our model using a convolutional neural network (CNN). The CNN receives a 599-dimensional vector of Mel-frequency coefficients, each containing 128 frequencies which describe their window. The CNN consists of 3 hidden layers and finishes with a max pooling layer, a fully connected layer, and a softmax layer to end up with a 10-dimensional vector, one dimension for each genre we are trying to classify.
  
