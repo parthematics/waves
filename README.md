@@ -60,31 +60,17 @@ Our convolutional neural network model is able to classify the genre of an unkno
 
 ### Documentation
 
-• previewDownloader.py: 
-USAGE: python previewDownloader.py [path to MSD data] 
-This script iterate over all ‘.h5’ in a directory and download a 30 seconds sample from 7digital.
+• downloader.py: 
+This file iterates over all ‘.h5’ in the 7Digital directory and downloads a 30 seconds sample.
 
-• preproccess.py: 
-USAGE: python preproccess.py [path to MSD mp3 data] 
-This script pre-processing the sound files. Calculating MFCC for a sliding window and saving the result in a ‘.pp’ file.
+• mfcc.py: 
+This file preprocesses each downloaded sound file by calculating MFCC for a 10-second window in the song and saving the result in a ‘.pp’ file.
 
-• formatInput.py: 
-USAGE: python formatInput.py [path to MSD pp data] 
-The script iterates over all ‘.pp’ files and generates ‘data’ and ‘labels’ that will be used as an input to the NN. 
-Moreover, the script output a t-SNE graph at the end.
+• format_training_data.py: 
+This file iterates over each of the ‘.pp’ files and generates two new files: ‘data’ and ‘labels’, each of which will be used as input to our convolutional neural network.
 
-• train.py: 
-USAGE: python train.py 
-This script builds the neural network and feeds it with ‘data’ and ‘labels’.  When it is done it will save ‘model.final’.
-
-### Complete Installation
-
-<ul>
-<li>Download the dataset files from https://www.dropbox.com/s/8ohx6m23co1qaz3/DataSet.zip?dl=0.</li>
-<li>Unzip file</li>
-<li>Place dataset files in the structure they are ordered in</li>
-</ul>
-
+• model.py: 
+This is the meat of our project; it generates the CNN using TensorFlow, feeding it with the previously created files ‘data’ and ‘labels’.  It will save the optimized model at the end as ‘model.pkt’.
 
 ## References
 
