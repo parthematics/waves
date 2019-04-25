@@ -6,9 +6,7 @@ This project discusses the task of analyzing musical samples using Mel-frequency
 
 ## Introduction
 
-Two out of the three of us spent the vast majority of this class completely lost. While we admire the concept of machine learning, its application came far more difficult than we had initially expected. I, having previous experience with the subject, decided to walk the rest of my team through the concepts presented in class in relatable terms. I showed the rest of the team my previous projects, online examples, and guided them through the immense learnings I had gained from my internship over the past summer.
-
-The three of us mutually agreed that we would skip the predefined project prompts and go with something we were all interested in. We eventually narrowed our project’s scope to two topics: either a recurrent neural network (RNN) that chooses a synonym for a word that the user would like to replace based on sentence content or use Mel Frequency Cepstral Coefficients (MFCCs) to classify the genre of a song using audio input. We finally chose the latter.
+As students inclined toward machine learning, the three of us mutually agreed that we wanted to work on something we were all interested in. We eventually narrowed our project’s scope to two topics: either a recurrent neural network (RNN) that chooses a synonym for a word that the user would like to replace based on sentence content or use Mel Frequency Cepstral Coefficients (MFCCs) to classify the genre of a song using audio input. We finally chose the latter.
 The three of us are all huge music fans, with tastes ranging all the way from the Smiths to Yung Lean. Most of all, however, we are interested in music that spans multiple genres: think Frank Ocean and Pink Floyd. A lot of this type of music lacks a label, so we were curious as to which genre(s) a machine learning model would categorize it as.
 
 ## The Dataset
