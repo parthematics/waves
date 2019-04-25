@@ -8,7 +8,8 @@ def update(curr):
     print('\r[{0}] {1}%'.format('#' * (curr / 10), curr))
 
 if __name__ == "__main__":
-
+    
+    // file path 
     file_path = sys.argv[1]
     i = 0.0
     for folder_name in os.listdir(file_path):
