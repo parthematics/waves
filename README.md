@@ -45,10 +45,10 @@ After reading about the results that Tao and Sander (papers that I referred to) 
  
  Based on my analysis, I observed the following:
 
-• Filter 250 picks up vocal thirds, i.e. multiple singers singing the same thing, but the notes are a major third (4 semitones) apart.
-• Filter 14 seems to pick up vibrato singing.
-• Filter 253 picks up various types of bass sounds and drum beats.
-• Filter 242 picks up some kind of resounding ambience.
+> Filter 250 picks up vocal thirds, i.e. multiple singers singing the same thing, but the notes are a major third (4 semitones) apart.
+> Filter 14 seems to pick up vibrato singing.
+> Filter 253 picks up various types of bass sounds and drum beats.
+> Filter 242 picks up some kind of resounding ambience.
 
 ## Results
 
